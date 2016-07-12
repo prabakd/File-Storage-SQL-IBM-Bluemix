@@ -28,12 +28,19 @@ def authentcate():
             dbuser = row[0]
             dbpass = row[1]
         if dbpass == password:
-            return render_template('upload.html',username=username)
+            return render_template('index1.html',username=username)
         else:
             return "Login Failed"
     except:
         conn.commit()
         return "User Details are Invalid"
+
+@app.route('/upload',methods=['GET','POST'])
+def upload():
+    return render_template('upload.html',username=username)
+@app.route('/download')
+def download():
+    return render_template('download.html')
 
 @app.route('/final',methods=['GET','POST'])
 def fina():
@@ -64,8 +71,8 @@ def fina():
     else:
         return "USER FILE SIZE EXCEEDED"
     return "FILE UPLOADEDED SUCCESSFULLY"
-@app.route('/download',methods=['GET','POST'])
-def download():
+@app.route('/downloadfile',methods=['GET','POST'])
+def downloadfile():
     filename=request.form['fname']
     username=request.form['uname']
     downloadedfile="download" + filename
