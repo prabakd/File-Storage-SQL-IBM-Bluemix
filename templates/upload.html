@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Starter Application</title>
+	 <script src="/static/jquery-1.12.4.js"></script>
+
+</head>
+<body>
+<h1>In Upload File</h1>
+	<form action="/final"  method="POST" enctype="multipart/form-data" >
+    <label>Select the file to Upload</label>
+	<input type="file"  name="fileupload"/><br><br>
+	<label>Enter File Description</label>
+	<input type= "textbox" placeholder="optional" name =desc maxlength="250" value="1">
+    <input href="/final"  type="submit" name="Upload">
+</form>
+</body>
+</html>

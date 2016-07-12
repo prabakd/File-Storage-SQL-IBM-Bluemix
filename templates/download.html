@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Starter Application</title>
+	 <script src="/static/jquery-1.12.4.js"></script>
+
+</head>
+<body>
+<h1>In Display File</h1>
+	<form action="/downloadfile"  method="POST" enctype="multipart/form-data" >
+    <label>Enter the file name to download:</label>
+	<input type="textbox"  name =fname maxlength="250" value=""><br><br>
+	<label>user name</label>
+    <input type="text" name=uname>
+    <input href="/downloadfile"  type="submit" name="Download">
+</form>
+</body>
+</html>
