@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: dha-app2
+  host: dha-app2
+  disk_quota: 1024M
