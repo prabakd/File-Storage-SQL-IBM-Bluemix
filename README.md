@@ -2,7 +2,8 @@
 PreRequisites: 
 1) Install flask and psycopg2 using pip command.
 2) Create a postgre SQL DB and link it with your app in IBM Bluemix
-3) In the server.py script replace the "XXXXX" with your postgre SQL DB credentials
+3) Create the DB tables and insert the user details for login.
+4) In the server.py script replace the "XXXXX" with your postgre SQL DB credentials
 
 Simple Flask app to sore and download the files from SQL DB
 ------------------------------------------------------------------
